@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Find Space Invaders!</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="jscript.js"></script>
+    <link rel="stylesheet" href="text_style.css" />
+</head>
+
+<body>
+    <h1>HELLO</h1>
+    <h2>Here you can get invaders list and current map</h2>
+
+    <div>
+        <button onclick="getInvader()">Get known invaders</button>
+        <button onclick="getMap()">Get known map</button>
+        <button onclick="recognizeInvaders()">Recognize</button>
+        <button onclick="check()">Check</button>
+
+        <div class="well form-group">
+            <input type="text" class="form-control" id="name_1" />
+            <textarea rows="9" id="map_1" class="form-control"></textarea>
+            <input type="number" class="form-control" id="acceptablePointsCount_1" value="10" min="0" max="32" maxlength="10" />
+        </div>
+
+        <div class="well form-group">
+            <input type="text" class="form-control" id="name_2" />
+            <textarea rows="9" id="map_2" class="form-control"></textarea>
+            <input type="number" class="form-control" id="acceptablePointsCount_2" value="10" min="0" max="32" maxlength="10" />
+        </div>
+
+        <div class="well form-group">
+            <input type="text" class="form-control" id="name_3" />
+            <textarea rows="9" id="map_3" class="form-control"></textarea>
+            <input type="number" class="form-control" id="acceptablePointsCount_3" value="10" min="0" max="32" maxlength="10" />
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="form-vertical">
+            <div class="col-md-12">
+                <div class="well form-group">
+                    <h5>Radar Map ID: <span id="radarMapId"></span></h5>
+                    <textarea rows="55" cols="88" id="radarMap" class="form-control" wrap="off"></textarea>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>

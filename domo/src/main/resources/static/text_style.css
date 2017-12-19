@@ -1,0 +1,4 @@
+.form-group textarea, .form-control textarea {
+    font-family: monospace;
+    font-size: smaller;
+}
